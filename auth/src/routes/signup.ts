@@ -2,10 +2,10 @@ import { Router, Request, Response } from "express";
 import { body, validationResult } from "express-validator";
 import jwt from "jsonwebtoken";
 
-import { validateRequest } from "../middlewares/validate-request";
+import { validateRequest } from "@jdnfadjks/common";
 import { User } from "../models/user";
-import { RequestValidationError } from "../errors/request-validation-error";
-import { BadRequestError } from "../errors/bad-request-error";
+import { RequestValidationError } from "@jdnfadjks/common";
+import { BadRequestError } from "@jdnfadjks/common";
 
 const router = Router();
 
