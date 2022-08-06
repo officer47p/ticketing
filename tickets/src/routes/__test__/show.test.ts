@@ -3,7 +3,6 @@ import { app } from "../../app";
 
 it("returns a 404 if the ticket is not found", async () => {
   const response = await request(app).get(`/api/tickets/someticketid`).send();
-  console.log(response.body);
   expect(response.statusCode).toEqual(404);
 });
 
