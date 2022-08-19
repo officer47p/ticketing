@@ -19,6 +19,8 @@ beforeAll(async () => {
   await mongoose.connect(mongoUri);
 });
 
+jest.mock("../nats-wrapper");
+
 beforeEach(async () => {
   const collections = await mongoose.connection.db.collections();
 
